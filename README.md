@@ -19,7 +19,7 @@ config = {
         
             'type': 'tcp',
             
-            'bind': '192.168.55.105:9999', # computer address where the broker is running 
+            'bind': '192.168.55.105:9999',
             
             'max-connections': 50,
             
