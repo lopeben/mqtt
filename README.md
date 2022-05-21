@@ -12,17 +12,31 @@ pip install hbmqtt
 ### Broker config
 
 config = {
+
     'listeners': {
+    
         'default': {
+        
             'type': 'tcp',
-            'bind': '192.168.55.105:9999', # ip of the machien where the broker is running 
+            
+            'bind': '192.168.55.105:9999', # ip of the machien where the broker is running
+            
             'max-connections': 50,
+            
         },
+        
     },
+    
     'sys_interval': 90,
-    'timeout-disconnect-delay': 300, # in seconds before broker kicks-off the client 
+    
+    'timeout-disconnect-delay': 300, # in seconds before broker kicks-off the client
+    
     'topic-check': {
+    
         'enabled': True,
+        
         'plugins': ['topic_taboo'],
+        
     }
+    
 }
